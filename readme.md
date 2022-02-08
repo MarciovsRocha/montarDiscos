@@ -15,7 +15,7 @@ O arquivo `./config.cfg` possui algumas variáveis/configurações/verificaçõe
 
 ### Limitação ao usuário root
 
-Para limitar este comando somente para o usuário root acesse o arquivo de configurações e descomente a chamada da função `check_root`.
+Para limitar este comando somente para o usuário root acesse o arquivo de configurações altere o valor da variável `ROOT` para `true`.
 
 ### USER 
 

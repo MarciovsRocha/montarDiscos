@@ -12,7 +12,7 @@ fi
 # função para verificar se o comando está sendo executado com 
 # privilégio
 function check_root(){
-    if [[ $EUID -ne 0 ]]; then
+    if [ [ $EUID -ne 0 ] && ROOT ]; then
         echo "This script must be run as root."
         exit 1
     fi
