@@ -17,7 +17,7 @@ O arquivo `./config.cfg` possui algumas variáveis/configurações/verificaçõe
 
 Para limitar este comando somente para o usuário root acesse o arquivo de configurações altere o valor da variável `ROOT` para `true`.
 
-### USER 
+### USER
 
 A variável `USER` contém um valor simbólico para identificação de caminhos e arquivos gerados pelo comando. Altere para um nome de identificação sua preferência.
 
@@ -38,6 +38,8 @@ A pasta `mensagens` contém as mensagens padronizadas e formatadas utilizadas po
 Altere a variável `LANGUAGE` no arquivo de configurações para definir o idioma das mensagens exibidas.
 
 Ob.: *As mensagens padrões são exibidas em Português-BR*
+
+Alterar a parte abaixo para uma tabela
 
 *[codificação] - idioma (país)*
 
