@@ -1,0 +1,2 @@
+var1=$1
+echo "Opcao \"$var1\" inválida."
