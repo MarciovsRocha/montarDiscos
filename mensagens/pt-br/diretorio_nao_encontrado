@@ -1,0 +1,3 @@
+diretorio_nao_encontrado(){
+    printf "O diretório informado (%s) não foi encontrado." "$1"
+}

@@ -1,0 +1,2 @@
+var=$1
+printf "O arquivo especificado (%s) não foi encontrado." "$var"
