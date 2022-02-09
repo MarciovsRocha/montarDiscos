@@ -9,8 +9,8 @@ else
     exit 1 
 fi
 
-# função para verificar se o comando está sendo executado com 
-# privilégio
+# função para verificar se o comando está sendo executado por
+# usuário root
 function check_root(){
     if [ [ $EUID -ne 0 ] && ROOT ]; then
         echo "This script must be run as root."
@@ -30,4 +30,10 @@ function check_dir(){
 # retorna 1 caso o arquivo não exista
 function check_file(){
     [ -f "$1" ] && return 0 || return 1
+}
+
+# funcao para listar todos os devices aliases disponíveis 
+# indicando quais ja estao montados
+function list_devices(){
+
 }

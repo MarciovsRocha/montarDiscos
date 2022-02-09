@@ -16,20 +16,32 @@ else
     exit 1
 fi
 
+# verifica se está sendo executado por usuário root
 check_root
 
+# help function
 function helpFunction(){
-    printf 
+    echo ""
 }
 
 # Argumentos:
 # -d especifica o Device a ser montado 
-
+# -h Mostra o menu de ajuda
+# -l lista os Devices atuais
 while getopts d:A: flag
 do
     case "${flag}" in
+        l) 
+            list_devices
+            exit 0
+            ;;
+        h)
+            helpFunction
+            exit 0
+            ;;
         *) 
             ./$msgFolder/opcao_invalida
             exit 1
+            ;;
     esac
 done
