@@ -1,0 +1,4 @@
+# TODO -c CheckRoot -t ARRUMAR
+# TODO -c "Extrair dados de objeto JSON" -t TERMINAR
+# TODO -c "Blockdevices como JSON" -t TESTAR
+# TODO -c "Listar Blockdevices" -t TERMINAR
