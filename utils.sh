@@ -3,6 +3,7 @@
 # importação do arquivo de configurações
 if [ -f ./config.cfg ]
 then 
+    # shellcheck source=/dev/null
     source ./config.cfg
 else 
     ./mensagens/pt-br/config_nao_encontrado
