@@ -39,7 +39,7 @@ function check_file(){
 function extrair_json(){
     tags=()
     for tag in "$@"; do
-        tags+="$tag"
+        tags+=("$tag")
     done
 }
 
