@@ -51,7 +51,6 @@ listar_blockdevices(){
     for e in "${blockdevices[@]}" ; do
         echo "Blocdevice: $e"
     done
-    
 }
 
 # funcao para remover todos espacos de uma string passada como parâmetro
@@ -98,7 +97,15 @@ ltrim(){
     echo "$(sed -e 's/[[:space:]]*$//' <<< "$var")"
 }
 
-
+# funcao para validar se o parametro passado eh um numero inteiro positivo
+isnumber(){
+    re='^[0-9]+$'
+    if [[ $1 =~ $re ]]; then 
+        return 0
+    else
+        return 1
+    fi
+}
 
 #teste(){
 #    jsonList=$(jq -r '.blockdevices'[] <<< $(lsblk -J))
