@@ -1,0 +1,2 @@
+var1=$1
+echo "O Parâmetro ($var1) incompatível ou incorreto."

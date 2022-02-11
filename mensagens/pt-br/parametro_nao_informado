@@ -1,0 +1,2 @@
+var1=$1
+echo "Não foram informados parametros suficientes para o procedimento '$var1'."
